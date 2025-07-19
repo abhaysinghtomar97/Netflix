@@ -4,18 +4,21 @@
     padding: 0px;
     margin: 0px;
     font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
 
 }
 
 body {
     width: 100vw;
+    overflow-x: hidden;
+    background-color: rgb(16, 12, 12);
 }
 
 .main {
     /* background-image: url("assets/images/bg.jpg"); */
     /* background-color: rgba(0, 0, 0, 0.485); */
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
-        url('assets/images/bg.jpg');
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.819), rgba(0, 0, 0, 0.468)),
+        url('assets/images/IN-en-20250714-TRIFECTA-perspective_5acb7337-c372-45ec-ae12-ddb110e6ad78_large.jpg');
     height: 100vh;
     background-size: max(1000px, 100vw);
     position: relative;
@@ -26,7 +29,7 @@ body {
     background-color: rgb(0, 0, 0);
     opacity: 0.44;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     position: absolute;
     top: 0;
 }
@@ -53,7 +56,7 @@ button {
     font-family: "Martel Sans", sans-serif;
     font-style: normal;
     position: relative;
-    height: 88%;
+    height: 90%;
     /* height: 100%; */
     color: white;
     display: flex;
@@ -133,9 +136,10 @@ button {
     border-radius: 4px;
     background-color: rgba(23, 23, 23, 0.7);
     border: 1px solid rgba(255, 255, 255, 0.7);
+    color: white;
 }
 
-.carousel-container , .reasons {
+.carousel-container , .reasons ,.faqs {
     position: relative;
     width: 90%;
     margin: 40px auto;
@@ -145,7 +149,7 @@ button {
 .carousel {
     display: flex;
     overflow-x: auto;
-    /* ✅ Enable horizontal scroll */
+    /* Enable horizontal scroll */
     scroll-behavior: smooth;
     gap: 10px;
     padding: 10px 0;
@@ -153,7 +157,7 @@ button {
 
 .carousel::-webkit-scrollbar {
     display: none;
-    /* ✅ Optional: hide scrollbar */
+    /* Optional: hide scrollbar */
 }
 
 .carousel img {
@@ -162,6 +166,11 @@ button {
     object-fit: cover;
     border-radius: 10px;
     flex-shrink: 0;
+}
+.carousel img:hover{
+    
+    transform: translate3d(-5px, -5px,-5px);
+    transition: 0.3s ease-in-out;
 }
 
 .nav {
@@ -189,7 +198,8 @@ button {
     height: 200px;
     border-radius: 10px;
     border: 1px solid black;
-    background: linear-gradient(to right, rgba(25, 24, 55, 0.799),rgb(21, 5, 5))
+    background: linear-gradient(to right, rgba(25, 24, 55, 0.799),rgb(21, 5, 5));
+    
 }
 .grid-container {
     display: grid;
@@ -212,4 +222,84 @@ button {
         width:85vw;
     }
     
+}
+h2{
+    color: white;
+}
+.card h3{
+    padding: 30px;
+    color: white;
+}
+.card p{
+    padding:0px 30px;
+    color: white;
+}
+.faq{
+    max-width: 90vw;
+    margin: 20px auto;
+
+}
+details{
+    color: white;
+  
+    padding: 5px;
+    
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+summary{
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgb(54, 54, 52);
+    padding: 1.5rem;
+}
+details[open] summary{
+    background:linear-gradient(to right, rgba(25, 24, 55, 0.799),rgb(21, 5, 5));
+    
+}
+summary:hover{
+    background-color: rgb(94, 96, 96);
+    transition: 0.2s ease-in;
+}
+.faqs div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+details  p{
+    background-color: rgb(49, 47, 47);
+    padding: 15px;
+}
+footer{
+    width:90%;
+    margin: 40px auto;
+}
+footer p{
+    color: white;
+    font-size: x-small;
+    margin-top:20px;
+    padding: 10px;
+
+
+}
+footer .links{
+    
+    display:grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: 5fr;
+    
+    padding: 10px;
+    margin: 10px 0px;
+    /* height: 15vh; */
+    /* justify-content: center; */
+    /* align-items:center; */
+}
+footer .links a{
+    font-size: x-small;
+    padding:5px;
+    color:white;
 }
