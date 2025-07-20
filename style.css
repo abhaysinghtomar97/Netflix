@@ -18,7 +18,7 @@ body {
     /* background-image: url("assets/images/bg.jpg"); */
     /* background-color: rgba(0, 0, 0, 0.485); */
     background: linear-gradient(to top, rgba(0, 0, 0, 0.819), rgba(0, 0, 0, 0.468)),
-        url('assets/images/IN-en-20250714-TRIFECTA-perspective_5acb7337-c372-45ec-ae12-ddb110e6ad78_large.jpg');
+        url('assets/images/bg2.jpg');
     height: 100vh;
     background-size: max(1000px, 100vw);
     position: relative;
